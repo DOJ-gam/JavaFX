@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+
+<!--  
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="A05_ComboBoxFXMLController">
+   <children>
+      <ComboBox fx:id="myComboBox" layoutX="175.0" layoutY="237.0" onAction="#comboChanged" prefWidth="150.0" promptText="Choose Fruit" />
+      <Label fx:id="myLabel" layoutX="138.0" layoutY="33.0" prefHeight="98.0" prefWidth="212.0" />
+      <Button fx:id="btn_addItems" layoutX="190.0" layoutY="442.0" mnemonicParsing="false" onAction="#ButtonCombo" prefHeight="26.0" prefWidth="115.0" text="Add Items" />
+   </children>
+</AnchorPane>
+-->
+
+<!-- USe FXML to design ComboBox -->
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="A05_ComboBoxFXMLController">
+
+   <children>
+   
+      <ComboBox fx:id="myComboBox" layoutX="175.0" layoutY="237.0" onAction="#comboChanged" prefWidth="150.0" promptText="Choose Fruit">
+      
+      		<items>
+      			<FXCollections fx:factory="observableArrayList">
+      				<String fx:value="First Item"/>
+      				<String fx:value="Second Item"/>
+      				<String fx:value="Third Item"/>
+      				<String fx:value="Fourth Item"/>
+      				<String fx:value="Fifth Item"/>	
+      				<String fx:value="Sixth Item"/>
+      			</FXCollections>
+      			
+      		</items>
+      
+      </ComboBox>
+      
+      <Label fx:id="myLabel" layoutX="138.0" layoutY="33.0" prefHeight="98.0" prefWidth="212.0" />
+      <Button fx:id="btn_addItems" layoutX="190.0" layoutY="442.0" mnemonicParsing="false" onAction="#ButtonCombo" prefHeight="26.0" prefWidth="115.0" text="Add Items" />
+      
+   </children>
+   
+</AnchorPane>

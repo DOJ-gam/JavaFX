@@ -1,0 +1,21 @@
+
+.root{
+	-fx-background-image: url("background.jpg")
+}
+
+#btnID{
+	
+	-fx-text-fill: white;
+	-fx-background-color: linear-gradient(#61a2b1, #2A5058);
+	-fx-font-weight: bold;
+	-fx-font-family: "Arial Narrow";
+
+}
+
+.label{
+	
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #0E1D33;
+	
+} 
